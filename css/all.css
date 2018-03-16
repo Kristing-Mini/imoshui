@@ -14,6 +14,7 @@ body{
 	background-color: rgb(252,252,252);
 }
 
+
 li:hover,li:active{
 	cursor: pointer;
 }
@@ -21,6 +22,7 @@ li:hover,li:active{
 .content,.detail{
 	padding-bottom: .6rem;
 	width:90vw;
+	overflow: hidden;
 	margin:0 auto;
 }
 
@@ -28,9 +30,8 @@ li:hover,li:active{
 
 
 .footer{
-	float: left;
 	display: flex;
-	width: 100vw;
+	width: 100%;
 	padding-top: .4rem;
 	height: 1rem;
 	border-top: .01rem solid #ddd;
@@ -44,12 +45,12 @@ li:hover,li:active{
 .footLeft{
 	display: inline-block;
 	text-align: center;	
-	width: 70vw;
+	width: 65vw;
 }
 
 .footRight{
 	display: inline-block;
-	width: 30vw;
+	width: 25vw;
 }
 
 .footRight:hover{
@@ -91,8 +92,10 @@ li:hover,li:active{
 	width:13.5vw;
 	min-width: 1.2rem;
 	height: .6rem;
+	font-size: .28rem;
+	font-weight: bold;
+	color:#60c768;
 	line-height: .65rem;
-	font-size: .2rem;
 }
 
 .navBlock{
@@ -166,8 +169,8 @@ li:hover,li:active{
 .pic{
 	float: right;
 	width: 3rem;
-	height: 1.3rem;
 	margin-top: .4rem;
+	margin-bottom: .3rem;
 	
 }
 
@@ -200,7 +203,7 @@ li:hover,li:active{
 /*list*/
 .right{
 	margin-top: .4rem;
-	width:calc( 90vw - 8rem);
+	width:calc( 90vw - 9rem);
 	float: left; 
 	min-width: 4rem;
 	/*margin-right: .3rem;*/
@@ -258,14 +261,15 @@ li:hover,li:active{
 .last{
 	margin-top: .4rem;
 	min-height: .2rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	
 }
 
 .lastlist{	
 	display: block;
-	float: left;
 	width: 2.2rem;
-	margin:0 .15rem ;	
 }
 
 .lastlist:first-child{
@@ -388,12 +392,11 @@ li:hover,li:active{
 	width: 4rem;
 	margin-top:.1rem;
 	font-size: .22rem;
-	color: 333;
 	font-weight: bold;
 	margin: .3rem auto;
 	text-align: center;
 	color:#3c8241;
-	text-shadow: 0 .02rem .05rem #ccc;
+	text-shadow: 0 .02rem .03rem #ccc;
 }
 
 .mytime{
